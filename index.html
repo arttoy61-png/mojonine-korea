@@ -3,340 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#143f31">
-<title>MOJONINE KOREA</title>
+<meta name="theme-color" content="#174b38">
+<title>MOJONINE KOREA | B2B Wholesale</title>
+<meta name="description" content="모조나인코리아 B2B 제품 유통 및 사업자 주문">
 <style>
-:root{--g:#143f31;--o:#eead63;--paper:#fffdf8;--cream:#f6f0e7;--ink:#20231f;--muted:#77746e;--line:#e7ded2;--serif:Georgia,"Times New Roman","Noto Serif KR",serif}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.58}
-body.lock{overflow:hidden}
-img{display:block;width:100%}
-button,a,input{font:inherit} button{cursor:pointer} a{color:inherit;text-decoration:none}
-.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-
-header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,60,45,.07)}
-.nav{height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:900;letter-spacing:.06em}
-.logo{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:var(--g);color:#f5d5aa;font-family:var(--serif);font-size:11px}
-.navlinks{display:flex;align-items:center;gap:20px;font-size:11px;font-weight:800}
-.navlinks button{border:0;background:none;font-weight:800}
-.order-top{background:var(--g)!important;color:#fff!important;border-radius:999px!important;padding:9px 12px!important}
-.counter{display:inline-grid;place-items:center;min-width:19px;height:19px;border-radius:50%;background:var(--o);color:#173b2e;margin-left:5px;font-size:9px}
-
-.hero{background:var(--g);color:#fff}
-.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;padding:62px 0 58px}
-.micro{margin:0 0 18px;font-size:9px;letter-spacing:.21em;font-weight:900;color:#d9c9b2}
-.hero h1{margin:0;font-family:var(--serif);font-size:clamp(54px,7vw,92px);line-height:.95;letter-spacing:-.055em;font-weight:500}
-.hero h1 em{display:block;color:var(--o);font-style:italic}
-.lead{max-width:510px;margin:26px 0 0;color:#cedbd5;font-size:15px}
-.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}
-.btn{min-height:45px;padding:0 17px;border-radius:999px;border:1px solid transparent;font-size:11px;font-weight:900;display:inline-flex;align-items:center;justify-content:center}
-.btn.orange{background:var(--o);color:#173b2e}
-.btn.ghost{background:transparent;border-color:rgba(255,255,255,.28);color:#fff}
-.btn.dark{background:var(--g);color:#fff}
-.btn.cream{background:var(--cream);border-color:#ded1bf;color:var(--g)}
-
-.hero-visual{min-width:0}
-.hero-card{overflow:hidden;border-radius:30px;background:#ede0cd;box-shadow:0 25px 70px rgba(0,0,0,.18)}
-.hero-card img{aspect-ratio:1/1;object-fit:cover}
-.hero-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}
-.hero-tab{border:1px solid rgba(255,255,255,.2);border-radius:12px;background:rgba(255,255,255,.04);color:#fff;padding:9px 8px;text-align:left}
-.hero-tab b{display:block;font-size:9px}
-.hero-tab span{font-size:8px;color:#bdcbc5}
-.hero-tab.active{background:var(--o);border-color:var(--o);color:#173b2e}
-.hero-tab.active span{color:#406251}
-
-.ticker{overflow:hidden;background:var(--o);color:#173b2e}
-.ticker-track{display:flex;width:max-content;animation:run 27s linear infinite}
-.ticker span{padding:11px 25px;white-space:nowrap;font-size:9px;font-weight:900;letter-spacing:.1em}
-@keyframes run{to{transform:translateX(-50%)}}
-
-.section{padding:94px 0}
-.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:40px}
-.section-head h2,.company h2,.b2b h2{margin:0;font-family:var(--serif);font-size:clamp(38px,5vw,62px);line-height:1.03;letter-spacing:-.045em;font-weight:500}
-.section-head p{max-width:470px;margin:0;color:var(--muted);font-size:13px}
-
-.products{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:stretch}
-.product-list{border-top:1px solid var(--line)}
-.product-row{width:100%;display:grid;grid-template-columns:50px 1fr 30px;gap:12px;align-items:center;padding:20px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;text-align:left}
-.product-row .n{font-family:var(--serif);font-size:19px;color:#b8956d}
-.product-row b{display:block;font-size:14px}
-.product-row small{color:var(--muted)}
-.product-row .arrow{width:29px;height:29px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
-.product-row.active .arrow{background:var(--g);color:#fff;border-color:var(--g)}
-.showcase{overflow:hidden;border-radius:26px;background:#efe5d7}
-.showcase img{height:100%;min-height:500px;object-fit:cover}
-.showcap{padding:13px 15px;background:#fff}
-.showcap b{display:block;font-size:12px}
-.showcap small{color:var(--muted);font-size:9px}
-
-.company{background:#f5f0e8}
-.company-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.company p{color:var(--muted);font-size:14px}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:24px}
-.fact{padding:16px;border:1px solid #ddd3c7;border-radius:15px;background:rgba(255,255,255,.45)}
-.fact b{display:block;font-size:12px} .fact span{font-size:10px;color:var(--muted)}
-.company-media{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.company-media img{aspect-ratio:1/1;object-fit:cover;border-radius:20px}
-.company-media img:last-child{margin-top:38px}
-
-.b2b{background:var(--g);color:#fff}
-.b2b-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}
-.b2b p{color:#c8d6d0;font-size:14px}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.point{padding:16px;border:1px solid rgba(255,255,255,.15);border-radius:15px;background:rgba(255,255,255,.035)}
-.point b{display:block;font-size:12px} .point span{color:#b9c9c2;font-size:10px}
-
-.quick{position:fixed;right:0;top:64%;transform:translateY(-50%);z-index:70;border:0;border-radius:15px 0 0 15px;background:#111;color:#fff;padding:13px 9px;min-width:68px;box-shadow:0 15px 38px rgba(0,0,0,.22);display:grid;gap:3px}
-.quick b{font-size:10px} .quick span{font-size:19px;line-height:1;color:var(--o);font-weight:900} .quick small{font-size:7px;color:#aaa}
-
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .78s ease}
-.reveal.show{opacity:1;transform:none}
-.delay{transition-delay:.12s}
-
-.detail{position:fixed;inset:0;z-index:90;background:var(--paper);overflow:auto;display:none}
-.detail.open{display:block}
-.detail-top{position:sticky;top:0;z-index:4;background:rgba(255,253,248,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.detail-nav{height:62px;display:flex;align-items:center;justify-content:space-between}
-.detail-close{border:0;background:#eee8de;border-radius:999px;padding:8px 12px;font-weight:900}
-.detail-page{display:none} .detail-page.active{display:block}
-.detail-hero{padding:46px 0 64px}
-.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.detail-main{overflow:hidden;border-radius:26px;background:#eee5d8}
-.detail-main img{aspect-ratio:1/1;object-fit:cover}
-.detail-copy h1{margin:0;font-family:var(--serif);font-size:clamp(44px,6vw,72px);line-height:1;letter-spacing:-.05em}
-.detail-copy p{color:var(--muted);font-size:14px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-.tags span{padding:6px 9px;border:1px solid var(--line);border-radius:999px;font-size:9px;font-weight:800}
-.detail-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:21px}
-.media-title{margin:0 0 20px;font-family:var(--serif);font-size:32px;font-weight:500}
-.media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.media-grid img{aspect-ratio:1/1;object-fit:cover;border-radius:17px;background:#eee}
-
-.order-sheet{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.52);display:none;align-items:flex-end;justify-content:flex-end}
-.order-sheet.open{display:flex}
-.panel{width:min(450px,100%);height:100%;overflow:auto;background:#fff;padding:22px}
-.panel-head{display:flex;align-items:center;justify-content:space-between}
-.close{width:36px;height:36px;border:0;border-radius:50%;background:#eee;font-size:19px}
-.items{display:grid;gap:9px;margin-top:18px}
-.item{display:grid;grid-template-columns:1fr auto;gap:9px;padding:13px;border:1px solid var(--line);border-radius:14px}
-.item b{font-size:12px} .item small{display:block;color:#888;font-size:9px}
-.qty{display:flex;gap:5px;align-items:center}
-.qty button{width:29px;height:29px;border:1px solid #ddd;border-radius:8px;background:#fff}
-.qty input{width:46px;text-align:center;border:1px solid #ddd;border-radius:8px;padding:5px}
-
-footer{padding:30px 0;background:#ece7df}
-.footer{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
-.footer small{color:#777;font-size:9px}
-
-@media(max-width:820px){
- .navlinks a{display:none}
- .hero-grid,.products,.company-grid,.b2b-grid,.detail-grid{grid-template-columns:1fr}
- .hero-grid{padding:44px 0 36px;gap:32px}
- .hero h1{font-size:50px}
- .hero-card{border-radius:22px}
- .section{padding:72px 0}
- .section-head{display:grid;align-items:start;gap:12px}
- .showcase img{min-height:0;aspect-ratio:1/1}
- .quick{top:68%;bottom:auto;transform:translateY(-50%)}
-}
-@media(max-width:540px){
- .wrap{width:min(100% - 28px,1160px)}
- .nav{height:60px}
- .brand span:last-child{font-size:10px}
- .navlinks{gap:7px}
- .order-top{font-size:9px;padding:8px 9px!important}
- .hero-grid{padding-top:36px}
- .hero h1{font-size:45px}
- .lead{font-size:13px}
- .hero-card img{aspect-ratio:1/1}
- .hero-tabs{gap:5px}
- .hero-tab{padding:8px 7px}
- .section{padding:64px 0}
- .product-row{grid-template-columns:39px 1fr 29px;padding:17px 0}
- .facts,.points{grid-template-columns:1fr}
- .company-media img{border-radius:14px}
- .company-media img:last-child{margin-top:18px}
- .media-grid{grid-template-columns:1fr}
- .quick{top:72%}
- .panel{height:92%;border-radius:22px 22px 0 0}
- .footer{display:grid;align-items:start}
-}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+:root{--green:#174b38;--green-dark:#0f3d2e;--orange:#efad62;--paper:#faf8f3;--white:#fff;--ink:#1f221f;--muted:#6f746e;--line:#e7e1d7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.55}body.lock{overflow:hidden}img{display:block;width:100%}button,a,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}
+header{position:sticky;top:0;z-index:60;background:rgba(250,248,243,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,60,45,.08)}.nav{height:72px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:15px;letter-spacing:-.02em}.logo{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#f6d4a6;font-size:10px;font-weight:900}.nav-center{display:flex;gap:36px;font-size:13px;color:#747970}.nav-center a:hover{color:var(--green)}.nav-right{display:flex;justify-content:flex-end;align-items:center;gap:12px}.order-top{border:0;border-radius:10px;background:var(--orange);color:#234535;padding:10px 14px;font-weight:800;font-size:12px}.count{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:50%;background:#173f31;color:#fff;margin-left:5px;font-size:10px}
+.hero{position:relative;overflow:hidden;background:var(--green);color:#fff}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 6% 15%,rgba(237,171,96,.24),transparent 23%),radial-gradient(circle at 88% 72%,rgba(57,143,105,.22),transparent 30%);pointer-events:none}.hero-grid{position:relative;z-index:1;min-height:650px;display:grid;grid-template-columns:.9fr 1.1fr;gap:74px;align-items:center;padding:68px 0}.eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 24px;color:#efbc7d;font-size:11px;letter-spacing:.18em;font-weight:800}.eyebrow:before{content:"";width:28px;height:1px;background:#efbc7d}.hero h1{margin:0;max-width:580px;font-size:clamp(64px,6.5vw,104px);line-height:.93;letter-spacing:-.065em;font-weight:800}.hero h1 span{display:block;color:var(--orange)}.hero-lead{max-width:500px;margin:30px 0 0;color:#cad8d2;font-size:16px;line-height:1.8}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.btn{min-height:46px;padding:0 18px;border-radius:999px;border:1px solid transparent;font-size:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}.btn.primary{background:var(--orange);color:#214232}.btn.ghost{border-color:rgba(255,255,255,.27);background:transparent;color:#fff}.btn.dark{background:var(--green);color:#fff}.btn.light{background:#f2ece2;border-color:#ddd2c2;color:var(--green)}.hero-art{position:relative;min-height:540px}.hero-frame{position:absolute;inset:0 0 0 32px;border-radius:32px;overflow:hidden;background:#eadecc;box-shadow:0 28px 80px rgba(0,0,0,.2)}.hero-frame img{height:100%;object-fit:cover;object-position:center;transition:opacity .4s ease,transform .8s ease}.hero-frame img.changing{opacity:.25;transform:scale(1.025)}.hero-tabs{position:absolute;left:0;bottom:28px;display:flex;gap:8px}.hero-tab{min-width:104px;border:1px solid rgba(255,255,255,.22);background:rgba(16,60,45,.86);backdrop-filter:blur(10px);color:#fff;border-radius:12px;padding:10px 12px;text-align:left}.hero-tab b{display:block;font-size:11px}.hero-tab small{font-size:9px;color:#c2d0ca}.hero-tab.active{background:var(--orange);border-color:var(--orange);color:#173f31}.hero-tab.active small{color:#406152}
+.ticker{overflow:hidden;background:var(--orange);color:#174b38}.ticker-track{display:flex;width:max-content;animation:ticker 28s linear infinite}.ticker span{padding:11px 28px;font-size:10px;font-weight:850;letter-spacing:.12em;white-space:nowrap}@keyframes ticker{to{transform:translateX(-50%)}}
+.section{padding:104px 0}.section-kicker{font-size:11px;letter-spacing:.18em;font-weight:850;color:#9c7850;margin:0 0 14px}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:44px;margin-bottom:46px}.section-title{margin:0;font-size:clamp(46px,5.2vw,76px);line-height:.98;letter-spacing:-.06em;font-weight:800}.section-head p{max-width:470px;margin:0;color:var(--muted);font-size:15px;line-height:1.8}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{position:relative;background:#fff;border:1px solid var(--line);overflow:hidden;transition:transform .28s ease,box-shadow .28s ease}.product-card:hover{transform:translateY(-6px);box-shadow:0 22px 54px rgba(34,52,44,.12)}.product-image{aspect-ratio:1/.92;overflow:hidden;background:#eee6da}.product-image img{height:100%;object-fit:cover;transition:transform .55s ease}.product-card:hover .product-image img{transform:scale(1.025)}.product-body{padding:22px 22px 24px}.product-meta{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px}.product-no{font-size:11px;font-weight:850;letter-spacing:.12em;color:#b2804d}.product-type{font-size:10px;font-weight:800;color:#92958f}.product-card h3{margin:0;font-size:26px;letter-spacing:-.045em;line-height:1.16;font-weight:800}.product-card p{margin:12px 0 22px;color:var(--muted);font-size:13px;line-height:1.7}.card-link{border:0;background:transparent;padding:0;display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:850;color:var(--green)}.card-link span{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff}
+.company{background:#f0ebe2}.company-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}.company-copy h2,.b2b h2{margin:0;font-size:clamp(46px,5.2vw,76px);line-height:1;letter-spacing:-.06em;font-weight:800}.company-copy>p,.b2b-copy>p{color:var(--muted);font-size:15px;line-height:1.8}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px}.fact{padding:18px;border-top:1px solid #d7cdbf}.fact b{display:block;font-size:14px}.fact span{display:block;margin-top:4px;font-size:11px;color:var(--muted)}.company-media{display:grid;grid-template-columns:1.08fr .92fr;gap:12px;align-items:start}.company-media img{aspect-ratio:1/1.04;object-fit:cover}.company-media img:last-child{margin-top:58px}
+.b2b{background:var(--green);color:#fff}.b2b-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}.b2b-copy>p{color:#c9d5d0}.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.step{min-height:144px;padding:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.035)}.step strong{display:block;color:var(--orange);font-size:11px;letter-spacing:.12em}.step b{display:block;margin-top:18px;font-size:16px}.step span{display:block;margin-top:5px;font-size:11px;color:#b7c7bf}
+.quick{position:fixed;right:0;top:56%;transform:translateY(-50%);z-index:75;border:0;border-radius:15px 0 0 15px;background:#111;color:#fff;min-width:72px;padding:13px 10px;box-shadow:0 16px 38px rgba(0,0,0,.22);display:grid;gap:3px}.quick b{font-size:10px}.quick span{font-size:20px;line-height:1;color:var(--orange);font-weight:900}.quick small{font-size:8px;color:#aaa}.reveal{opacity:0;transform:translateY(22px);transition:opacity .72s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}.delay{transition-delay:.12s}
+.detail{position:fixed;inset:0;z-index:100;background:var(--paper);display:none;overflow:auto}.detail.open{display:block}.detail-top{position:sticky;top:0;z-index:4;background:rgba(250,248,243,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.detail-nav{height:66px;display:flex;align-items:center;justify-content:space-between}.back{border:0;border-radius:999px;padding:9px 13px;background:#ece6dc;font-weight:800}.detail-page{display:none}.detail-page.active{display:block}.detail-hero{padding:54px 0 76px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.detail-main{overflow:hidden;background:#eee5d8}.detail-main img{aspect-ratio:1/1;object-fit:cover}.detail-copy h1{margin:0;font-size:clamp(48px,5.5vw,76px);line-height:.96;letter-spacing:-.06em;font-weight:800}.detail-copy p{color:var(--muted);font-size:14px;line-height:1.8}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:17px}.tags span{padding:7px 10px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:750}.detail-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.media-title{margin:0 0 24px;font-size:34px;letter-spacing:-.04em;font-weight:800}.media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.media-grid img{aspect-ratio:1/1;object-fit:cover}
+.order-sheet{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.52);display:none;align-items:flex-end;justify-content:flex-end}.order-sheet.open{display:flex}.panel{width:min(460px,100%);height:100%;overflow:auto;background:#fff;padding:24px}.panel-head{display:flex;align-items:center;justify-content:space-between}.close{width:38px;height:38px;border:0;border-radius:50%;background:#eee;font-size:20px}.items{display:grid;gap:10px;margin-top:20px}.item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px;border:1px solid var(--line)}.item b{font-size:13px}.item small{display:block;color:#888;font-size:10px}.qty{display:flex;gap:5px;align-items:center}.qty button{width:31px;height:31px;border:1px solid #ddd;background:#fff}.qty input{width:50px;text-align:center;border:1px solid #ddd;padding:6px}
+footer{padding:32px 0;background:#e9e4dc}.footer{display:flex;justify-content:space-between;gap:20px;align-items:flex-end}.footer small{font-size:10px;color:#777}
+@media(max-width:900px){.wrap{width:min(100% - 32px,1240px)}.nav{grid-template-columns:1fr auto}.nav-center{display:none}.hero-grid,.company-grid,.b2b-grid,.detail-grid{grid-template-columns:1fr}.hero-grid{min-height:auto;padding:50px 0 40px;gap:38px}.hero h1{font-size:56px}.hero-art{min-height:460px}.hero-frame{inset:0 0 0 18px}.product-grid{grid-template-columns:1fr}.product-card{display:grid;grid-template-columns:.9fr 1.1fr}.product-image{aspect-ratio:auto;min-height:280px}.section{padding:78px 0}.section-head{display:grid;align-items:start;gap:14px}.company-media img:last-child{margin-top:22px}.quick{top:auto;bottom:90px;transform:none}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1240px)}.nav{height:62px}.brand{font-size:12px}.order-top{font-size:10px;padding:9px 10px}.hero-grid{padding-top:38px}.hero h1{font-size:46px}.hero-lead{font-size:14px;margin-top:22px}.hero-art{min-height:360px}.hero-frame{inset:0}.hero-tabs{left:10px;right:10px;bottom:10px;display:grid;grid-template-columns:repeat(3,1fr)}.hero-tab{min-width:0;padding:8px}.section{padding:64px 0}.section-title{font-size:40px}.section-head p{font-size:13px}.product-card{display:block}.product-image{aspect-ratio:1/.92;min-height:0}.product-body{padding:19px}.product-card h3{font-size:24px}.company-copy h2,.b2b h2{font-size:40px}.facts,.steps{grid-template-columns:1fr}.company-media{gap:8px}.company-media img:last-child{margin-top:16px}.media-grid{grid-template-columns:1fr}.quick{bottom:78px}.panel{height:92%;border-radius:22px 22px 0 0}.footer{display:grid}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top"><span class="logo">M9</span><span>MOJONINE KOREA</span></a>
-    <nav class="navlinks">
-      <a href="#products">제품</a><a href="#company">회사소개</a><a href="#b2b">B2B</a>
-      <button class="order-top" type="button" data-open-order>주문서 <span class="counter" data-count>0</span></button>
-    </nav>
-  </div>
-</header>
-
+<header><div class="wrap nav"><a class="brand" href="#top"><span class="logo">M9</span><span>MOJONINE KOREA</span></a><nav class="nav-center"><a href="#products">Products</a><a href="#company">Company</a><a href="#b2b">B2B Order</a></nav><div class="nav-right"><button class="order-top" data-open-order>사업자 주문 <span class="count" data-count>0</span></button></div></div></header>
 <main id="top">
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="reveal show">
-      <p class="micro">MOJONINE KOREA · PRODUCT & DISTRIBUTION</p>
-      <h1>좋은 제품을<br><em>시장과 연결합니다.</em></h1>
-      <p class="lead">식품부터 생활가전까지. 제품을 고르고 거래처에 제안하고, 실제 주문과 배송까지 이어지는 B2B 유통을 합니다.</p>
-      <div class="actions"><a class="btn orange" href="#products">현재 제품 보기</a><button class="btn ghost" type="button" data-open-order>B2B 주문서</button></div>
-    </div>
-    <div class="hero-visual reveal delay">
-      <div class="hero-card"><img id="heroImage" src="assets/sweet-main.jpg" alt="모조나인코리아 대표 제품"></div>
-      <div class="hero-tabs">
-        <button class="hero-tab active" data-hero="sweet"><b>01 고구마칩</b><span>FOOD</span></button>
-        <button class="hero-tab" data-hero="dryer"><b>02 드라이어</b><span>APPLIANCE</span></button>
-        <button class="hero-tab" data-hero="sesame"><b>03 참깨강정</b><span>FOOD</span></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="ticker"><div class="ticker-track">
-<span>WHOLESALE · PRODUCT · DISTRIBUTION · MOJONINE KOREA ·</span><span>고구마칩 · 헤어드라이어 · 참깨강정 · 사업자 주문 · 납품 문의 ·</span>
-<span>WHOLESALE · PRODUCT · DISTRIBUTION · MOJONINE KOREA ·</span><span>고구마칩 · 헤어드라이어 · 참깨강정 · 사업자 주문 · 납품 문의 ·</span>
-</div></div>
-
-<section class="section" id="products">
-<div class="wrap">
-  <div class="section-head reveal"><div><p class="micro" style="color:#9b7b55">CURRENT PRODUCTS</p><h2>현재 취급 제품</h2></div><p>한 품목만 크게 보이지 않도록 세 제품을 같은 무게로 보여주고, 상세에서는 각 제품의 성격에 맞게 사진과 설명 흐름을 다르게 잡았습니다.</p></div>
-  <div class="products">
-    <div class="product-list reveal">
-      <button class="product-row active" data-product="sweet"><span class="n">01</span><span><b>황금한입 고구마칩</b><small>달콤하고 바삭한 고구마 스낵</small></span><span class="arrow">→</span></button>
-      <button class="product-row" data-product="dryer"><span class="n">02</span><span><b>HANBUL 헤어드라이어</b><small>화이트 바디와 분리형 필터 구조</small></span><span class="arrow">→</span></button>
-      <button class="product-row" data-product="sesame"><span class="n">03</span><span><b>오모나 참깨강정</b><small>고소하고 바삭한 전통 간식</small></span><span class="arrow">→</span></button>
-    </div>
-    <div class="showcase reveal delay">
-      <img id="showcaseImage" src="assets/sweet-detail.jpg" alt="">
-      <div class="showcap"><b id="showcaseTitle">황금한입 고구마칩</b><small>상세보기 · 사업자 주문</small></div>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section company" id="company">
-<div class="wrap company-grid">
-  <div class="reveal"><p class="micro" style="color:#9b7b55">MOJONINE KOREA</p><h2>제품 하나가 아니라,<br>계속 늘어나는 포트폴리오.</h2><p>모조나인코리아가 취급하는 상품을 계속 추가할 수 있는 회사형 B2B 홈페이지로 구성했습니다. 디자인은 제품을 보여주고, 실제 주문·회원·개인정보는 카페24 기능으로 연결합니다.</p>
-    <div class="facts"><div class="fact"><b>제품별 상세</b><span>각 제품의 사진과 설명을 따로 구성</span></div><div class="fact"><b>통합 주문</b><span>필요한 제품만 0부터 수량 입력</span></div><div class="fact"><b>거래처 운영</b><span>카페24 주문·회원 기능 연결</span></div><div class="fact"><b>배송 연결</b><span>한진 송장 연동 구조로 확장</span></div></div>
-  </div>
-  <div class="company-media reveal delay"><img src="assets/sesame-media.jpg" alt="오모나 참깨강정"><img src="assets/dryer-media.jpg" alt="HANBUL 헤어드라이어"></div>
-</div>
-</section>
-
-<section class="section b2b" id="b2b">
-<div class="wrap b2b-grid">
-  <div class="reveal"><p class="micro">B2B ORDER</p><h2>도매 주문은<br>간단하게.</h2><p>첫 방문에는 주문수량이 모두 0입니다. 홈이나 상품 상세에서 담았을 때만 우측 주문 숫자가 올라가고, 주문서를 열어 최종 수량을 정합니다.</p><div class="actions"><button class="btn orange" type="button" data-open-order>주문서 열기</button></div></div>
-  <div class="points reveal delay"><div class="point"><b>01 상품 선택</b><span>홈 또는 상품 상세에서 선택</span></div><div class="point"><b>02 수량 입력</b><span>0부터 필요한 수량만 입력</span></div><div class="point"><b>03 거래처 정보</b><span>카페24에서 안전하게 처리</span></div><div class="point"><b>04 주문·배송</b><span>관리자·송장·배송상태 관리</span></div></div>
-</div>
-</section>
+<section class="hero"><div class="wrap hero-grid"><div class="reveal show"><p class="eyebrow">PRODUCT · DISTRIBUTION · B2B</p><h1>좋은 제품을<br><span>시장과 연결합니다.</span></h1><p class="hero-lead">모조나인코리아는 식품부터 생활가전까지, 판매 가능성이 있는 제품을 발굴하고 거래처와 연결합니다.</p><div class="actions"><a class="btn primary" href="#products">제품 보기</a><button class="btn ghost" data-open-order>B2B 주문서</button></div></div><div class="hero-art reveal delay"><div class="hero-frame"><img id="heroImage" src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-main.jpg" alt="모조나인코리아 제품"></div><div class="hero-tabs"><button class="hero-tab active" data-hero="sweet"><b>고구마칩</b><small>FOOD</small></button><button class="hero-tab" data-hero="dryer"><b>드라이어</b><small>APPLIANCE</small></button><button class="hero-tab" data-hero="sesame"><b>참깨강정</b><small>FOOD</small></button></div></div></div></section>
+<div class="ticker"><div class="ticker-track"><span>WHOLESALE · PRODUCT · DISTRIBUTION · MOJONINE KOREA ·</span><span>고구마칩 · 헤어드라이어 · 참깨강정 · 사업자 주문 · 납품 문의 ·</span><span>WHOLESALE · PRODUCT · DISTRIBUTION · MOJONINE KOREA ·</span><span>고구마칩 · 헤어드라이어 · 참깨강정 · 사업자 주문 · 납품 문의 ·</span></div></div>
+<section class="section" id="products"><div class="wrap"><div class="section-head reveal"><div><p class="section-kicker">CURRENT COLLECTION · 현재 취급 제품</p><h2 class="section-title">제품 포트폴리오</h2></div><p>식품부터 생활가전까지, 모조나인코리아가 현재 공급하고 있는 제품입니다. 제품별 상세 정보와 사업자 주문을 바로 확인할 수 있습니다.</p></div><div class="product-grid">
+<article class="product-card reveal" data-card="sweet"><div class="product-image"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-detail.jpg" alt="황금한입 고구마칩"></div><div class="product-body"><div class="product-meta"><span class="product-no">01 · FOOD</span><span class="product-type">SNACK</span></div><h3>황금한입 고구마칩</h3><p>고구마의 달콤함과 바삭한 식감을 살린 스낵.</p><button class="card-link" data-detail-open="sweet">제품 상세 <span>→</span></button></div></article>
+<article class="product-card reveal delay" data-card="dryer"><div class="product-image"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-detail.jpg" alt="HANBUL 헤어드라이어"></div><div class="product-body"><div class="product-meta"><span class="product-no">02 · APPLIANCE</span><span class="product-type">HAIR</span></div><h3>HANBUL 헤어드라이어</h3><p>깔끔한 화이트 바디와 관리하기 쉬운 분리형 필터.</p><button class="card-link" data-detail-open="dryer">제품 상세 <span>→</span></button></div></article>
+<article class="product-card reveal" data-card="sesame"><div class="product-image"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-detail.jpg" alt="오모나 참깨강정"></div><div class="product-body"><div class="product-meta"><span class="product-no">03 · FOOD</span><span class="product-type">SNACK</span></div><h3>오모나 참깨강정</h3><p>참깨의 고소함과 바삭한 식감이 살아있는 전통 간식.</p><button class="card-link" data-detail-open="sesame">제품 상세 <span>→</span></button></div></article>
+</div></div></section>
+<section class="section company" id="company"><div class="wrap company-grid"><div class="company-copy reveal"><p class="section-kicker">MOJONINE KOREA</p><h2>한 품목이 아니라<br>제품 포트폴리오로.</h2><p>특정 상품 하나만 전면에 내세우는 브랜드몰보다, 다양한 제품을 계속 추가하고 거래처에 제안할 수 있는 회사형 B2B 구조로 운영합니다.</p><div class="facts"><div class="fact"><b>제품별 상세</b><span>각 제품의 정보와 미디어를 독립 구성</span></div><div class="fact"><b>통합 주문</b><span>여러 품목을 한 주문으로 연결</span></div><div class="fact"><b>거래처 확장</b><span>카페24 회원·단가 관리로 확장</span></div><div class="fact"><b>배송 확장</b><span>한진 송장 연동 구조로 연결</span></div></div></div><div class="company-media reveal delay"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-media.jpg" alt="참깨강정"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-media.jpg" alt="헤어드라이어"></div></div></section>
+<section class="section b2b" id="b2b"><div class="wrap b2b-grid"><div class="b2b-copy reveal"><p class="section-kicker" style="color:#efbc7d">B2B ORDER</p><h2>도매 주문은<br>간단하게.</h2><p>첫 방문 수량은 0입니다. 필요한 상품만 담고 주문서에서 최종 수량을 확인합니다.</p><div class="actions"><button class="btn primary" data-open-order>주문서 열기</button></div></div><div class="steps reveal delay"><div class="step"><strong>01</strong><b>상품 선택</b><span>홈 또는 상세페이지에서 선택</span></div><div class="step"><strong>02</strong><b>수량 입력</b><span>필요한 수량만 0부터 입력</span></div><div class="step"><strong>03</strong><b>거래처 정보</b><span>카페24 주문 단계에서 안전하게 처리</span></div><div class="step"><strong>04</strong><b>주문·배송</b><span>관리자 주문과 송장 상태 관리</span></div></div></div></section>
 </main>
-
-<button class="quick" type="button" data-open-order><b>B2B 주문</b><span data-count>0</span><small>담은 수량</small></button>
-
-<div class="detail" id="detail">
-  <div class="detail-top"><div class="wrap detail-nav"><strong>MOJONINE KOREA</strong><button class="detail-close" type="button" data-close-detail>← 제품 목록</button></div></div>
-
-  <article class="detail-page" data-detail="sweet">
-    <section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="assets/sweet-main.jpg" alt=""></div><div class="detail-copy"><p class="micro" style="color:#9b7b55">PRODUCT DETAIL</p><h1>황금한입<br>고구마칩</h1><p>고구마의 달콤함과 바삭한 식감을 살린 스낵. 광고용 사진은 충분히 보여주되 B2B 주문으로 이어지는 흐름은 간단하게 잡았습니다.</p><div class="tags"><span>고구마 스낵</span><span>고구마 함량 90%</span><span>B2B 납품</span></div><div class="detail-actions"><button class="btn dark" data-add="sweet">주문서에 1 담기</button><button class="btn cream" data-open-order>B2B 주문서</button></div></div></div></section>
-    <section class="section" style="padding-top:26px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="assets/sweet-detail.jpg"><img src="assets/sweet-media.jpg"></div></div></section>
-  </article>
-
-  <article class="detail-page" data-detail="dryer">
-    <section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="assets/dryer-main.jpg" alt=""></div><div class="detail-copy"><p class="micro" style="color:#9b7b55">PRODUCT DETAIL</p><h1>HANBUL<br>헤어드라이어</h1><p>화이트 바디, 분리형 후면 필터, 거치와 사용 장면을 중심으로 구성했습니다. 식품 상세페이지를 복사하지 않고 제품 구조가 먼저 보이게 했습니다.</p><div class="tags"><span>헤어드라이어</span><span>분리형 필터</span><span>생활가전 B2B</span></div><div class="detail-actions"><button class="btn dark" data-add="dryer">주문서에 1 담기</button><button class="btn cream" data-open-order>B2B 주문서</button></div></div></div></section>
-    <section class="section" style="padding-top:26px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="assets/dryer-detail.jpg"><img src="assets/dryer-media.jpg"></div></div></section>
-  </article>
-
-  <article class="detail-page" data-detail="sesame">
-    <section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="assets/sesame-main.jpg" alt=""></div><div class="detail-copy"><p class="micro" style="color:#9b7b55">PRODUCT DETAIL</p><h1>오모나<br>참깨강정</h1><p>패키지 사진만 반복하지 않고 참깨의 질감, 실제 크기와 플레이팅이 먼저 보이도록 구성했습니다.</p><div class="tags"><span>참깨강정</span><span>전통간식</span><span>B2B 납품</span></div><div class="detail-actions"><button class="btn dark" data-add="sesame">주문서에 1 담기</button><button class="btn cream" data-open-order>B2B 주문서</button></div></div></div></section>
-    <section class="section" style="padding-top:26px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="assets/sesame-detail.jpg"><img src="assets/sesame-media.jpg"></div></div></section>
-  </article>
+<button class="quick" data-open-order><b>B2B 주문</b><span data-count>0</span><small>담은 수량</small></button>
+<div class="detail" id="detail"><div class="detail-top"><div class="wrap detail-nav"><strong>MOJONINE KOREA</strong><button class="back" data-close-detail>← 제품 목록</button></div></div>
+<article class="detail-page" data-detail="sweet"><section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-main.jpg" alt=""></div><div class="detail-copy"><p class="section-kicker">PRODUCT DETAIL</p><h1>황금한입<br>고구마칩</h1><p>고구마의 달콤함과 바삭한 식감을 살린 스낵. 제품 미디어와 사업자 주문 흐름을 한 화면에서 확인할 수 있습니다.</p><div class="tags"><span>고구마 스낵</span><span>고구마 함량 90%</span><span>B2B 납품</span></div><div class="detail-actions"><button class="btn dark" data-add="sweet">주문서에 1 담기</button><button class="btn light" data-open-order>B2B 주문서</button></div></div></div></section><section class="section" style="padding-top:20px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-detail.jpg"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-media.jpg"></div></div></section></article>
+<article class="detail-page" data-detail="dryer"><section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-main.jpg" alt=""></div><div class="detail-copy"><p class="section-kicker">PRODUCT DETAIL</p><h1>HANBUL<br>헤어드라이어</h1><p>화이트 바디와 분리형 후면 필터를 중심으로 제품 구조와 사용 이미지를 보여줍니다.</p><div class="tags"><span>헤어드라이어</span><span>분리형 필터</span><span>생활가전 B2B</span></div><div class="detail-actions"><button class="btn dark" data-add="dryer">주문서에 1 담기</button><button class="btn light" data-open-order>B2B 주문서</button></div></div></div></section><section class="section" style="padding-top:20px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-detail.jpg"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-media.jpg"></div></div></section></article>
+<article class="detail-page" data-detail="sesame"><section class="detail-hero"><div class="wrap detail-grid"><div class="detail-main"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-main.jpg" alt=""></div><div class="detail-copy"><p class="section-kicker">PRODUCT DETAIL</p><h1>오모나<br>참깨강정</h1><p>참깨의 질감과 실제 제품 이미지를 중심으로 고소하고 바삭한 특징을 보여줍니다.</p><div class="tags"><span>참깨강정</span><span>전통간식</span><span>B2B 납품</span></div><div class="detail-actions"><button class="btn dark" data-add="sesame">주문서에 1 담기</button><button class="btn light" data-open-order>B2B 주문서</button></div></div></div></section><section class="section" style="padding-top:20px"><div class="wrap"><h2 class="media-title">제품 미디어</h2><div class="media-grid"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-detail.jpg"><img src="https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-media.jpg"></div></div></section></article>
 </div>
-
-<div class="order-sheet" id="orderSheet">
-  <section class="panel">
-    <div class="panel-head"><div><p class="micro" style="color:#9b7b55;margin-bottom:4px">B2B ORDER</p><h2 style="margin:0">거래처 주문서</h2></div><button class="close" type="button" data-close-order>×</button></div>
-    <p style="color:#777;font-size:11px">처음 수량은 모두 0입니다. 필요한 상품만 입력하세요.</p>
-    <div class="items" id="orderItems"></div>
-    <p style="margin-top:15px;padding:12px;background:#f5efe4;border-radius:12px;color:#6f665b;font-size:10px">현재 파일은 디자인 미리보기입니다. 실제 주문·개인정보·결제는 카페24 연결 후 처리합니다.</p>
-  </section>
-</div>
-
-<footer><div class="wrap footer"><div><strong>MOJONINE KOREA</strong><small>Product · Distribution · B2B</small></div><small>회사·사업자·연락처 정보는 실제 운영 정보로 연결</small></div></footer>
-
+<div class="order-sheet" id="orderSheet"><section class="panel"><div class="panel-head"><div><p class="section-kicker" style="margin-bottom:4px">B2B ORDER</p><h2 style="margin:0;font-size:28px">거래처 주문서</h2></div><button class="close" data-close-order>×</button></div><p style="color:#777;font-size:12px">처음 수량은 모두 0입니다. 필요한 상품만 입력하세요.</p><div class="items" id="orderItems"></div><p style="margin-top:16px;padding:13px;background:#f4eee4;font-size:11px;color:#69655e">현재는 미리보기입니다. 실제 주문·회원·개인정보는 카페24 연결 후 처리합니다.</p></section></div>
+<footer><div class="wrap footer"><div><strong>MOJONINE KOREA</strong><small>Product · Distribution · B2B</small></div><small>회사 및 사업자 정보는 운영 정보로 연결</small></div></footer>
 <script>
-const HERO={
- sweet:"assets/sweet-main.jpg", dryer:"assets/dryer-main.jpg", sesame:"assets/sesame-main.jpg"
-};
-const SHOW={
- sweet:{src:"assets/sweet-detail.jpg",title:"황금한입 고구마칩"},
- dryer:{src:"assets/dryer-detail.jpg",title:"HANBUL 헤어드라이어"},
- sesame:{src:"assets/sesame-detail.jpg",title:"오모나 참깨강정"}
-};
-const PRODUCTS={
- sweet:{name:"황금한입 고구마칩",unit:"박스"},
- dryer:{name:"HANBUL 헤어드라이어",unit:"개"},
- sesame:{name:"오모나 참깨강정",unit:"박스"}
-};
-let cart={sweet:0,dryer:0,sesame:0};
-let heroKeys=["sweet","dryer","sesame"], heroIndex=0;
-
-function updateCounts(){
-  const t=Object.values(cart).reduce((a,b)=>a+b,0);
-  document.querySelectorAll("[data-count]").forEach(x=>x.textContent=t);
-}
-function setHero(id){
-  document.getElementById("heroImage").src=HERO[id];
-  document.querySelectorAll("[data-hero]").forEach(b=>b.classList.toggle("active",b.dataset.hero===id));
-}
-let heroTimer=setInterval(()=>{heroIndex=(heroIndex+1)%heroKeys.length;setHero(heroKeys[heroIndex])},4800);
-document.querySelectorAll("[data-hero]").forEach(b=>b.onclick=()=>{heroIndex=heroKeys.indexOf(b.dataset.hero);setHero(b.dataset.hero);clearInterval(heroTimer);heroTimer=setInterval(()=>{heroIndex=(heroIndex+1)%3;setHero(heroKeys[heroIndex])},4800)});
-
-function setProduct(id){
-  document.querySelectorAll("[data-product]").forEach(b=>b.classList.toggle("active",b.dataset.product===id));
-  document.getElementById("showcaseImage").src=SHOW[id].src;
-  document.getElementById("showcaseTitle").textContent=SHOW[id].title;
-}
-document.querySelectorAll("[data-product]").forEach(b=>{
-  b.onmouseenter=()=>setProduct(b.dataset.product);
-  b.onclick=()=>openDetail(b.dataset.product);
-});
-document.getElementById("showcaseImage").onclick=()=>{
-  const active=document.querySelector("[data-product].active");
-  openDetail(active?active.dataset.product:"sweet");
-};
-
-function openDetail(id){
-  document.querySelectorAll("[data-detail]").forEach(p=>p.classList.toggle("active",p.dataset.detail===id));
-  document.getElementById("detail").classList.add("open");
-  document.getElementById("detail").scrollTop=0;
-  document.body.classList.add("lock");
-}
-document.querySelector("[data-close-detail]").onclick=()=>{
-  document.getElementById("detail").classList.remove("open");
-  document.body.classList.remove("lock");
-};
-document.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>{cart[b.dataset.add]++;updateCounts()});
-
-function renderOrder(){
-  document.getElementById("orderItems").innerHTML=Object.entries(PRODUCTS).map(([id,p])=>`
-   <div class="item"><div><b>${p.name}</b><small>${p.unit} 단위</small></div>
-   <div class="qty"><button data-minus="${id}">−</button><input data-qty="${id}" type="number" min="0" value="${cart[id]}"><button data-plus="${id}">+</button></div></div>`).join("");
-  document.querySelectorAll("[data-minus]").forEach(b=>b.onclick=()=>{cart[b.dataset.minus]=Math.max(0,cart[b.dataset.minus]-1);renderOrder();updateCounts()});
-  document.querySelectorAll("[data-plus]").forEach(b=>b.onclick=()=>{cart[b.dataset.plus]++;renderOrder();updateCounts()});
-  document.querySelectorAll("[data-qty]").forEach(i=>i.oninput=()=>{cart[i.dataset.qty]=Math.max(0,parseInt(i.value||0)||0);updateCounts()});
-}
-function openOrder(){renderOrder();document.getElementById("orderSheet").classList.add("open");document.body.classList.add("lock")}
-document.querySelectorAll("[data-open-order]").forEach(b=>b.onclick=openOrder);
-document.querySelector("[data-close-order]").onclick=()=>{document.getElementById("orderSheet").classList.remove("open");document.body.classList.remove("lock")};
-
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");obs.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -25px"});
-document.querySelectorAll(".reveal:not(.show)").forEach(e=>obs.observe(e));
-updateCounts();
+const HERO={sweet:"https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sweet-main.jpg",dryer:"https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/dryer-main.jpg",sesame:"https://raw.githubusercontent.com/arttoy61-png/mojonine-korea/main/assets/sesame-main.jpg"};const PRODUCTS={sweet:{name:"황금한입 고구마칩",unit:"박스"},dryer:{name:"HANBUL 헤어드라이어",unit:"개"},sesame:{name:"오모나 참깨강정",unit:"박스"}};let cart={sweet:0,dryer:0,sesame:0},heroKeys=["sweet","dryer","sesame"],heroIndex=0;
+function updateCounts(){const t=Object.values(cart).reduce((a,b)=>a+b,0);document.querySelectorAll("[data-count]").forEach(x=>x.textContent=t)}function setHero(id){const img=document.getElementById("heroImage");img.classList.add("changing");setTimeout(()=>{img.src=HERO[id];img.onload=()=>img.classList.remove("changing")},150);document.querySelectorAll("[data-hero]").forEach(b=>b.classList.toggle("active",b.dataset.hero===id))}let heroTimer=setInterval(()=>{heroIndex=(heroIndex+1)%heroKeys.length;setHero(heroKeys[heroIndex])},4600);document.querySelectorAll("[data-hero]").forEach(b=>b.onclick=()=>{heroIndex=heroKeys.indexOf(b.dataset.hero);setHero(b.dataset.hero);clearInterval(heroTimer);heroTimer=setInterval(()=>{heroIndex=(heroIndex+1)%3;setHero(heroKeys[heroIndex])},4600)});
+function openDetail(id){document.querySelectorAll("[data-detail]").forEach(p=>p.classList.toggle("active",p.dataset.detail===id));document.getElementById("detail").classList.add("open");document.getElementById("detail").scrollTop=0;document.body.classList.add("lock")}document.querySelectorAll("[data-detail-open]").forEach(b=>b.onclick=()=>openDetail(b.dataset.detailOpen));document.querySelector("[data-close-detail]").onclick=()=>{document.getElementById("detail").classList.remove("open");document.body.classList.remove("lock")};document.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>{cart[b.dataset.add]++;updateCounts()});
+function renderOrder(){document.getElementById("orderItems").innerHTML=Object.entries(PRODUCTS).map(([id,p])=>`<div class="item"><div><b>${p.name}</b><small>${p.unit} 단위</small></div><div class="qty"><button data-minus="${id}">−</button><input data-qty="${id}" type="number" min="0" value="${cart[id]}"><button data-plus="${id}">+</button></div></div>`).join("");document.querySelectorAll("[data-minus]").forEach(b=>b.onclick=()=>{cart[b.dataset.minus]=Math.max(0,cart[b.dataset.minus]-1);renderOrder();updateCounts()});document.querySelectorAll("[data-plus]").forEach(b=>b.onclick=()=>{cart[b.dataset.plus]++;renderOrder();updateCounts()});document.querySelectorAll("[data-qty]").forEach(i=>i.oninput=()=>{cart[i.dataset.qty]=Math.max(0,parseInt(i.value||0)||0);updateCounts()})}function openOrder(){renderOrder();document.getElementById("orderSheet").classList.add("open");document.body.classList.add("lock")}document.querySelectorAll("[data-open-order]").forEach(b=>b.onclick=openOrder);document.querySelector("[data-close-order]").onclick=()=>{document.getElementById("orderSheet").classList.remove("open");document.body.classList.remove("lock")};const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");obs.unobserve(e.target)}}),{threshold:.1,rootMargin:"0px 0px -30px"});document.querySelectorAll(".reveal:not(.show)").forEach(e=>obs.observe(e));updateCounts();
 </script>
-</body>
-</html>
+</body></html>
